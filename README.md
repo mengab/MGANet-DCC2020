@@ -1,7 +1,7 @@
 # MGANet
 PyTorch implementation of "MGANet: A Robust Model for Quality Enhancement of Compressed Video" 
 
-[arXiv](http://arxiv.org/abs/2481027)
+[arXiv](http://arxiv.org/pdf/1811.09150v1)
 
 <p align="center">
     <img src="files/framework.png" width="800"> <br />
@@ -27,7 +27,7 @@ python MGANet_test_AI37.py --gpu_id 1 --is_training False
 ## Train and Data
 * We will update the training database for the Tus' partition of HEVC for training and better reading after recent paper deadline.
 ## Video Results
-* [Here](http://arxiv.org/abs/2481027) we provide quality enhancement results of compressed video for 18 widely used sequences for visual and quantitative comparisons.
+* [Here](http://arxiv.org/pdf/1811.09150v1) we provide quality enhancement results of compressed video for 18 widely used sequences for visual and quantitative comparisons.
 ## Citation
 
 If you use any part of our code, or our data is useful for your research, please consider citing:
@@ -36,6 +36,6 @@ If you use any part of our code, or our data is useful for your research, please
 @article{MGANET2018,
   author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng, Liu and Chuan, Wang and Chen, Chen and Bing, Zeng},
   title={MGANet: A Robust Model for Quality Enhancement of Compressed Video},
-  journal={arXiv preprint arXiv:2481027},
+  journal={http://arxiv.org/pdf/1811.09150v1},
   year={2018}
 }
