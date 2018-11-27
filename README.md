@@ -25,7 +25,7 @@ Currently, we release our research code for testing. It should produce the same 
 python MGANet_test_AI37.py --gpu_id 1 --is_training False
 ```
 ## Train and Data
-* We will update the training database for the Tus' partition of HEVC for training and better reading after recent paper deadline.
+* We will update the training code and database for the TUs' partition of HEVC for training and better reading after recent paper deadline.
 ## Video Results
 * [Here](http://arxiv.org/pdf/1811.09150v1) we provide quality enhancement results of compressed video for 18 widely used sequences for visual and quantitative comparisons.
 ## Citation
