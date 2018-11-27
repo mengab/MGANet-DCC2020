@@ -39,3 +39,7 @@ If you use any part of our code, or our method is useful for your research, plea
   journal={http://arxiv.org/pdf/1811.09150v1},
   year={2018}
 }
+```
+## Contact
+We are glad to hear if you have any suggestions and questions. 
+Please send email to xmengab@connect.ust.hk
