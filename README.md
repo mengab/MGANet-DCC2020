@@ -15,7 +15,8 @@ PyTorch implementation of "MGANet: A Robust Model for Quality Enhancement of Com
 
 
 ## Installation
-The code was developed using Python 3.6 & PyTorch 0.4 & CUDA 8.0. There may be a problem related to software versions. To fix the problem, you may look at the implementation in MGANet files and replace the syntax to match the new PyTorch environment. Install correlation package (if you haven't installed this package before):
+The code was developed using Python 3.6 & PyTorch 0.4 & CUDA 8.0. There may be a problem related to software versions. To fix the problem, you may look at the implementation in MGANet files and replace the syntax to match the new PyTorch environment. 
+
 ## Code v1.0
 Currently, we release our research code for testing. It should produce the same results as in the paper under LD and AI configurations and frame number 3.
 ## Test
