@@ -200,7 +200,7 @@ if __name__ == "__main__":
     parser.add_argument("--frame_nums", default=19, type=int, help="frame number of one video to test (default: 90)")
     parser.add_argument("--startfrm_position", default=0, type=int, help="start frame position (default: 0)")
     parser.add_argument("--is_training", default=False, type=bool, help="train or test mode")
-    parser.add_argument("--result_path", default='./result_LD37/', type=str, help="store path")
+    parser.add_argument("--result_path", default='./result_LD37/', type=str, help="store results")
     opts = parser.parse_args()
     torch.cuda.set_device(opts.gpu_id)
 
