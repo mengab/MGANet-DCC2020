@@ -22,8 +22,7 @@ def yuv_import(filename, dims ,startfrm,numframe):
     totalfrm = int(ps // frame_size)
     d00 = dims[0] // 2
     d01 = dims[1] // 2
-    # print('num',totalfrm,filename)
-    # numfrm = totalfrm - startfrm
+
     assert startfrm+numframe<=totalfrm
 
     Y = np.zeros(shape=(numframe, 1,dims[0], dims[1]), dtype=np.uint8, order='C')
@@ -58,7 +57,7 @@ def get_w_h(filename):
 
 def get_data(one_filename,video_index,num_frame,startfrm_position):
 
-    # print(one_filename)
+
     one_filename_length = len(one_filename)
     data_Y = []
     for i in range(one_filename_length+1):
@@ -120,7 +119,7 @@ def image_test(one_filename,net_G,patch_size=[128,128],f_txt=None,opt=None):
         data_37_filename = np.sort(glob.glob(one_filename[0]+'/*.yuv'))
         data_Y = get_data(one_filename,video_index=video_index,num_frame=opt.frame_nums+5,startfrm_position=opt.startfrm_position)
         start =1
-        # patch_size = patch_size[0]
+
         psnr_gain_sum = 0
         psnr_pre_gt_sum=0
         psnr_data_gt_sum=0
@@ -138,13 +137,13 @@ def image_test(one_filename,net_G,patch_size=[128,128],f_txt=None,opt=None):
             data_aft_value_patch = torch.from_numpy(data_aft).float().cuda()
 
             data_mask_value_patch = torch.from_numpy(mask).float().cuda()
-            # print(data_pre_value_patch.shape, data_cur_value_patch.shape, data_aft_value_patch.shape, data_mask_value_patch.shape)
+           
             start_time = time.time()
             fake_image = net_G(data_pre_value_patch,data_cur_value_patch,data_aft_value_patch,data_mask_value_patch)
             end_time=time.time()
             fake_image_numpy = fake_image.detach().cpu().numpy()
             fake_image_numpy = np.squeeze(fake_image_numpy)*255.0
-            # print('fake_image_numpy:',fake_image_numpy.shape)
+ 
                   
             finally_image=np.squeeze(fake_image_numpy)
             mask_image = np.squeeze(mask)*255.
@@ -158,7 +157,7 @@ def image_test(one_filename,net_G,patch_size=[128,128],f_txt=None,opt=None):
             label = np.squeeze(label).astype(np.float32)
             cv2.imwrite(opt.result_path+'/result_label/%02d/%02d.png'%(video_index+1,itr+2),label.astype(np.uint8))
             cv2.imwrite(opt.result_path+'/result_compression_data/%02d/%02d.png'%(video_index+1,itr+2),data_cur_image.astype(np.uint8))
-            # print(finally_image.shape,label.shape)
+
             psnr_pre_gt  = PSNR(finally_image, label)
 
             psnr_data_gt = PSNR(data_cur_image, label)
@@ -185,18 +184,18 @@ def image_test(one_filename,net_G,patch_size=[128,128],f_txt=None,opt=None):
 
 if __name__ == "__main__":
    
-    parser = argparse.ArgumentParser(description="2019_test")
-    parser.add_argument('--net_G', default='../model/model_epoch_AI37.pth',help="path to netG (to continue training)")
+    parser = argparse.ArgumentParser(description="MGANet_test")
+    parser.add_argument('--net_G', default='../model/model_epoch_AI37.pth',help="add checkpoint")
     parser.add_argument("--gpu_id", default=0, type=int, help="gpu ids (default: 0)")
-    parser.add_argument("--video_nums", default=1, type=int, help="the number of videos to test (default: 0)")
-    parser.add_argument("--frame_nums", default=29, type=int, help="the number of frames in one video to test (default: 90)")
-    parser.add_argument("--startfrm_position", default=9, type=int, help="start test from the startfrm_position in one video (default: 0)")
-    parser.add_argument("--is_training", default=False, type=bool, help="train mode or test mode")
-    parser.add_argument("--result_path", default='./result_AI37/', type=str, help="all result's store path")
+    parser.add_argument("--video_nums", default=1, type=int, help="Videos number (default: 0)")
+    parser.add_argument("--frame_nums", default=29, type=int, help="frame number of the video to test (default: 90)")
+    parser.add_argument("--startfrm_position", default=9, type=int, help="start frame position in one video (default: 0)")
+    parser.add_argument("--is_training", default=False, type=bool, help="train or test mode")
+    parser.add_argument("--result_path", default='./result_AI37/', type=str, help="store path")
     opts = parser.parse_args()
     torch.cuda.set_device(opts.gpu_id)
 
-    txt_name = './MGANet_test_data_AI37.txt'#path to store the psnr
+    txt_name = './MGANet_test_data_AI37.txt'
 
     if os.path.isfile(txt_name):
         f = open(txt_name, 'w+')  
