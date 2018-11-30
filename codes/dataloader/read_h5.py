@@ -4,7 +4,7 @@ import torch.multiprocessing as mp
 mp.set_start_method('spawn')
 import h5py
 
-f = h5py.File('../../LD37.h5','r')
+f = h5py.File('../../train_b8_LD37.h5','r')
 
 for key in f.keys():
     print(f[key].name,f[key].shape)
