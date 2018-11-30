@@ -88,7 +88,7 @@ def get_data(one_filename,video_index,num_frame,startfrm_position):
                 data_Y.append(label_37_filename_Y)
                
     return  data_Y
-    # Y,U,V = yuv_import(filename,dims,startfrm)
+
 def test_batch(data_Y, start, batch_size=1):
 
     data_pre = (data_Y[0][start-1:start,...])/255.0
@@ -191,7 +191,7 @@ if __name__ == "__main__":
     parser.add_argument("--frame_nums", default=29, type=int, help="frame number of the video to test (default: 90)")
     parser.add_argument("--startfrm_position", default=9, type=int, help="start frame position in one video (default: 0)")
     parser.add_argument("--is_training", default=False, type=bool, help="train or test mode")
-    parser.add_argument("--result_path", default='./result_AI37/', type=str, help="store path")
+    parser.add_argument("--result_path", default='./result_AI37/', type=str, help="store results")
     opts = parser.parse_args()
     torch.cuda.set_device(opts.gpu_id)
 
