@@ -35,7 +35,7 @@ def multiscaleEPE(network_output, target_image, weights=None, L_model=None):
     if type(network_output) not in [tuple, list]:
         network_output = [network_output]
     if weights is None:
-        weights = [ 1.0/32,1.0/16.0, 1.0/8.0, 1.0/4.0, 1.0/2.0]  # as in original article
+        weights = [ 1.0/32,1.0/16.0, 1.0/8.0, 1.0/4.0, 1.0/2.0]  
     assert(len(weights) == len(network_output))
 
     loss = 0
