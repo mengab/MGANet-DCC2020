@@ -22,7 +22,7 @@ Currently, we release our research code for testing. It should produce the same 
 ## Test
 * Pretrained models can be downloaded from this link!
 ```
-https://
+https://drive.google.com/drive/folders/1xROBCUHgIX-3zqKMSHwKFEK8udIEicl1?usp=sharing
 ```
 * It would be very easy to understand the test function and test on your own data.
 * An example of test usage is shown as follows:
