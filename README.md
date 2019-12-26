@@ -1,7 +1,8 @@
 # MGANet
 PyTorch implementation of "MGANet: A Robust Model for Quality Enhancement of Compressed Video" 
 
-- [arXiv](http://arxiv.org/pdf/1811.09150)      - [DCC2020](https://www.cs.brandeis.edu/~dcc/Call.html)
+- [arXiv](http://arxiv.org/pdf/1811.09150)      
+- [DCC2020](https://www.cs.brandeis.edu/~dcc/Call.html)
 
 <p align="center">
     <img src="files/framework.png" width="800"> <br />
