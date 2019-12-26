@@ -45,6 +45,14 @@ If you use any part of our code, or our method is useful for your research, plea
   year={2018}
 }
 ```
+```
+@article{Meng_DCC2020,
+  author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng and Bing, Zeng},
+  title={Flow-Guided Temporal-Spatial Network for HEVC Compressed Video Quality Enhancement},
+  journal={Data Compression Conference (DCC)},
+  year={2020}
+}
+```
 ## Contact
 We are glad to hear if you have any suggestions and questions. 
 Please send email to xmengab@connect.ust.hk
