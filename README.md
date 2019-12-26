@@ -2,7 +2,7 @@
 PyTorch implementation of "MGANet: A Robust Model for Quality Enhancement of Compressed Video" 
 
 - [arXiv](http://arxiv.org/pdf/1811.09150)      
-- [Data Compression Conference 2020 (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
+- [Data Compression Conference (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
 
 <p align="center">
     <img src="files/framework.png" width="800"> <br />
