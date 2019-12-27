@@ -43,8 +43,7 @@ If you use any part of our code, or our method is useful for your research, plea
 @article{MGANET2018,
   author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng, Liu and Chuan, Wang and Chen, Chen and Bing, Zeng},
   title={MGANet: A Robust Model for Quality Enhancement of Compressed Video},
-  journal={arXiv:1811.09150},
-  year={2018}
+  journal={arXiv:1811.09150}
 }
 
 @inproceedings{Meng_DCC2020,
