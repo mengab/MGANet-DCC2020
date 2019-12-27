@@ -1,6 +1,6 @@
 # MGANet
 PyTorch implementation of "MGANet & DCC2020 paper". 
-We have merged the training codes for both methods.
+We have merged the training codes of both methods.
 
 - [ArXiv](http://arxiv.org/pdf/1811.09150)      
 - [Data Compression Conference (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
