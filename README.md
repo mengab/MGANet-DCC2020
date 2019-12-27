@@ -40,7 +40,7 @@ python MGANet_test_AI37.py --gpu_id 1 --is_training False
 If you use any part of our code, or our method is useful for your research, please consider citing:
 
 ```
-@article{MGANET2018,
+@article{MGANET,
   author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng, Liu and Chuan, Wang and Chen, Chen and Bing, Zeng},
   title={MGANet: A Robust Model for Quality Enhancement of Compressed Video},
   journal={arXiv:1811.09150}
