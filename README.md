@@ -47,12 +47,24 @@ If you use any part of our code, or our method is useful for your research, plea
 }
 
 @inproceedings{Meng_DCC2020,
-  author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng and Bing, Zeng},
+  author={Xiandong, Meng and Xuan, Deng and Shuyuan, Zhu and Shuaicheng, Liu and Bing, Zeng},
   title={Flow-Guided Temporal-Spatial Network for HEVC Compressed Video Quality Enhancement},
   booktitle={Data Compression Conference(DCC)},
   year={2020}
 }
 ```
+
+Related work
+```
+@ARTICLE{MGANet_csvt,
+author={Xiandong Meng and Xuan Deng and Shuyuan Zhu and Xinfeng Zhang and Bing Zeng},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
+title={A Robust Quality Enhancement Method Based on Joint Spatial-Temporal Priors for Video Coding},
+note={{DOI}:10.1109/TCSVT.2020.3019919},
+year={2020},
+}
+```
+
 ## Contact
 We are glad to hear if you have any suggestions and questions. 
 Please send email to xmengab@connect.ust.hk
