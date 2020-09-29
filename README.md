@@ -5,6 +5,9 @@ We have merged the codes of both methods.
 - [ArXiv](http://arxiv.org/pdf/1811.09150)      
 - [Data Compression Conference (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
 
+Related work
+- [TCSVT](https://ieeexplore.ieee.org/document/9178742)
+
 <p align="center">
     <img src="files/framework.png" width="800"> <br />
     <em> The proposed MGANet framework</em>
