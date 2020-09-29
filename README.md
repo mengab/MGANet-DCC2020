@@ -58,7 +58,7 @@ If you use any part of our code, or our method is useful for your research, plea
 
 ## Related work
 ```
-@ARTICLE{MGANet_csvt,
+@ARTICLE{MENG_tcsvt,
 author={Xiandong Meng and Xuan Deng and Shuyuan Zhu and Xinfeng Zhang and Bing Zeng},
 title={A Robust Quality Enhancement Method Based on Joint Spatial-Temporal Priors for Video Coding},
 journal={IEEE Transactions on Circuits and Systems for Video Technology},
