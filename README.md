@@ -1,6 +1,5 @@
 # MGANet
-PyTorch implementation of "MGANet & DCC2020 paper". 
-We have merged the codes of both methods.
+PyTorch implementation of "MGANet & DCC2020 paper", and we have merged the code of these two methods.
 
 - [ArXiv](http://arxiv.org/pdf/1811.09150)      
 - [Data Compression Conference (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
