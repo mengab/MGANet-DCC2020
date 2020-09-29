@@ -60,8 +60,8 @@ If you use any part of our code, or our method is useful for your research, plea
 ```
 @ARTICLE{MGANet_csvt,
 author={Xiandong Meng and Xuan Deng and Shuyuan Zhu and Xinfeng Zhang and Bing Zeng},
-journal={IEEE Transactions on Circuits and Systems for Video Technology},
 title={A Robust Quality Enhancement Method Based on Joint Spatial-Temporal Priors for Video Coding},
+journal={IEEE Transactions on Circuits and Systems for Video Technology},
 note={{DOI}:10.1109/TCSVT.2020.3019919},
 year={2020},
 }
