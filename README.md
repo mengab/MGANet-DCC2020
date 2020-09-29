@@ -6,7 +6,7 @@ We have merged the codes of both methods.
 - [Data Compression Conference (DCC2020)](https://www.cs.brandeis.edu/~dcc/Call.html)
 
 Related work
-- [TCSVT](https://ieeexplore.ieee.org/document/9178742)
+- [TCSVT](https://ieeexplore.ieee.org/document/9178742)- Enhanced version of MGANet
 
 <p align="center">
     <img src="files/framework.png" width="800"> <br />
